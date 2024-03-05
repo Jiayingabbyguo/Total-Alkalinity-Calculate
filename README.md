@@ -1,2 +1,2 @@
 # Total-Alkalinity-Calculate
-for generating csv files from pclims files and then calculate the TA using calkulate
+For generating a summarised csv file from .pclims files (alkalinity titration machine), then calculate the total alkalinity using calkulate
