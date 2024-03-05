@@ -3,7 +3,7 @@ For generating a summarised csv file from .pclims files (alkalinity titration ma
 
 1-Place TA_Calculate.py file in the directory with folders containing the .pclim files.
 
-2-From terminal run "python TA_Calculate.py.
+2-From terminal run "python TA_Calculate.py"
 
 3-Follow the text prompts presented in the terminal.
 
