@@ -5,9 +5,19 @@ Author: Flynn M, Advice from Jiaying G
 """
 #You will need to put the file in a same folder (expect for the "end" and "dummy" files), then edit the “Folder_name”, which I usually set it as a date; “CRM1” and “CRM2” position; and then folder path and file path into the one on your computer. 
 
-# if you dont have dependancies, install using pip or other methods. (PyCO2SYS is for Calkulate library)
-#pip --version
-#pip install PyCO2SYS
+import subprocess
+import importlib.util
+
+def install_and_import(package):
+    package_name = package.split('==')[0]  # Remove version constraints if present
+    if importlib.util.find_spec(package_name) is None:
+        print(f"{package_name} not found, installing...")
+        subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
+    else:
+        print(f"{package_name} is already installed.")
+
+install_and_import('pandas')
+install_and_import('PyCO2SYS')  # This is for the Calkulate library
 
 import os
 import pandas as pd
