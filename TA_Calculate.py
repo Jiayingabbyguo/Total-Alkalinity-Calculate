@@ -74,6 +74,7 @@ if(INPUT_FROM_USER):
             print(folder)
 
     INPUT_DIRECTORY = input("Enter the folder name containing the pclims files: ")
+    OUTPUT_DIRECTORY = '.\\' + INPUT_DIRECTORY
 
     #ask for crm1 and crm2
     CRM1 = int(input("Enter the line number of CRM1: "))
